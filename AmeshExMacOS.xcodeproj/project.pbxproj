@@ -11,7 +11,36 @@
 		8232BDB01EB70176003B0C8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8232BDAF1EB70176003B0C8F /* ViewController.swift */; };
 		8232BDB21EB70176003B0C8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8232BDB11EB70176003B0C8F /* Assets.xcassets */; };
 		8232BDB51EB70176003B0C8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8232BDB31EB70176003B0C8F /* Main.storyboard */; };
+		8232BDC31EB704EB003B0C8F /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8232BDC21EB704EB003B0C8F /* NotificationCenter.framework */; };
+		8232BDC81EB704EB003B0C8F /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8232BDC71EB704EB003B0C8F /* TodayViewController.swift */; };
+		8232BDCB1EB704EB003B0C8F /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8232BDC91EB704EB003B0C8F /* TodayViewController.xib */; };
+		8232BDCF1EB704EB003B0C8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8232BDCD1EB704EB003B0C8F /* InfoPlist.strings */; };
+		8232BDD21EB704EB003B0C8F /* AmeshExMacOSExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8232BDC01EB704EB003B0C8F /* AmeshExMacOSExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8232BDD01EB704EB003B0C8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8232BDA21EB70176003B0C8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8232BDBF1EB704EB003B0C8F;
+			remoteInfo = AmeshExMacOSExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8232BDD61EB704EB003B0C8F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8232BDD21EB704EB003B0C8F /* AmeshExMacOSExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8232BDAA1EB70176003B0C8F /* AmeshExMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmeshExMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +49,13 @@
 		8232BDB11EB70176003B0C8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8232BDB41EB70176003B0C8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8232BDB61EB70176003B0C8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8232BDC01EB704EB003B0C8F /* AmeshExMacOSExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AmeshExMacOSExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8232BDC21EB704EB003B0C8F /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		8232BDC61EB704EB003B0C8F /* AmeshExMacOSExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AmeshExMacOSExtension.entitlements; sourceTree = "<group>"; };
+		8232BDC71EB704EB003B0C8F /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		8232BDCA1EB704EB003B0C8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		8232BDCC1EB704EB003B0C8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8232BDCE1EB704EB003B0C8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +66,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8232BDBD1EB704EB003B0C8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8232BDC31EB704EB003B0C8F /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				8232BDAC1EB70176003B0C8F /* AmeshExMacOS */,
+				8232BDC41EB704EB003B0C8F /* AmeshExMacOSExtension */,
+				8232BDC11EB704EB003B0C8F /* Frameworks */,
 				8232BDAB1EB70176003B0C8F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				8232BDAA1EB70176003B0C8F /* AmeshExMacOS.app */,
+				8232BDC01EB704EB003B0C8F /* AmeshExMacOSExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +108,34 @@
 			path = AmeshExMacOS;
 			sourceTree = "<group>";
 		};
+		8232BDC11EB704EB003B0C8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8232BDC21EB704EB003B0C8F /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8232BDC41EB704EB003B0C8F /* AmeshExMacOSExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8232BDC71EB704EB003B0C8F /* TodayViewController.swift */,
+				8232BDC91EB704EB003B0C8F /* TodayViewController.xib */,
+				8232BDCC1EB704EB003B0C8F /* Info.plist */,
+				8232BDCD1EB704EB003B0C8F /* InfoPlist.strings */,
+				8232BDC51EB704EB003B0C8F /* Supporting Files */,
+			);
+			path = AmeshExMacOSExtension;
+			sourceTree = "<group>";
+		};
+		8232BDC51EB704EB003B0C8F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8232BDC61EB704EB003B0C8F /* AmeshExMacOSExtension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,15 +146,34 @@
 				8232BDA61EB70176003B0C8F /* Sources */,
 				8232BDA71EB70176003B0C8F /* Frameworks */,
 				8232BDA81EB70176003B0C8F /* Resources */,
+				8232BDD61EB704EB003B0C8F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8232BDD11EB704EB003B0C8F /* PBXTargetDependency */,
 			);
 			name = AmeshExMacOS;
 			productName = AmeshExMacOS;
 			productReference = 8232BDAA1EB70176003B0C8F /* AmeshExMacOS.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8232BDBF1EB704EB003B0C8F /* AmeshExMacOSExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8232BDD31EB704EB003B0C8F /* Build configuration list for PBXNativeTarget "AmeshExMacOSExtension" */;
+			buildPhases = (
+				8232BDBC1EB704EB003B0C8F /* Sources */,
+				8232BDBD1EB704EB003B0C8F /* Frameworks */,
+				8232BDBE1EB704EB003B0C8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmeshExMacOSExtension;
+			productName = AmeshExMacOSExtension;
+			productReference = 8232BDC01EB704EB003B0C8F /* AmeshExMacOSExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -92,6 +186,11 @@
 				ORGANIZATIONNAME = "大石弘一郎";
 				TargetAttributes = {
 					8232BDA91EB70176003B0C8F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 234G69CT2G;
+						ProvisioningStyle = Automatic;
+					};
+					8232BDBF1EB704EB003B0C8F = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 234G69CT2G;
 						ProvisioningStyle = Automatic;
@@ -112,6 +211,7 @@
 			projectRoot = "";
 			targets = (
 				8232BDA91EB70176003B0C8F /* AmeshExMacOS */,
+				8232BDBF1EB704EB003B0C8F /* AmeshExMacOSExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +223,15 @@
 			files = (
 				8232BDB21EB70176003B0C8F /* Assets.xcassets in Resources */,
 				8232BDB51EB70176003B0C8F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8232BDBE1EB704EB003B0C8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8232BDCB1EB704EB003B0C8F /* TodayViewController.xib in Resources */,
+				8232BDCF1EB704EB003B0C8F /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +247,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8232BDBC1EB704EB003B0C8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8232BDC81EB704EB003B0C8F /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8232BDD11EB704EB003B0C8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8232BDBF1EB704EB003B0C8F /* AmeshExMacOSExtension */;
+			targetProxy = 8232BDD01EB704EB003B0C8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8232BDB31EB70176003B0C8F /* Main.storyboard */ = {
@@ -147,6 +272,22 @@
 				8232BDB41EB70176003B0C8F /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8232BDC91EB704EB003B0C8F /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8232BDCA1EB704EB003B0C8F /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		8232BDCD1EB704EB003B0C8F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8232BDCE1EB704EB003B0C8F /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -247,6 +388,7 @@
 		8232BDBA1EB70176003B0C8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 234G69CT2G;
@@ -261,6 +403,7 @@
 		8232BDBB1EB70176003B0C8F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 234G69CT2G;
@@ -268,6 +411,36 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.jugem.meg.AmeshExMacOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8232BDD41EB704EB003B0C8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AmeshExMacOSExtension/AmeshExMacOSExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 234G69CT2G;
+				INFOPLIST_FILE = AmeshExMacOSExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.jugem.meg.AmeshExMacOS.AmeshExMacOSExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8232BDD51EB704EB003B0C8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AmeshExMacOSExtension/AmeshExMacOSExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 234G69CT2G;
+				INFOPLIST_FILE = AmeshExMacOSExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.jugem.meg.AmeshExMacOS.AmeshExMacOSExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -289,6 +462,14 @@
 			buildConfigurations = (
 				8232BDBA1EB70176003B0C8F /* Debug */,
 				8232BDBB1EB70176003B0C8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8232BDD31EB704EB003B0C8F /* Build configuration list for PBXNativeTarget "AmeshExMacOSExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8232BDD41EB704EB003B0C8F /* Debug */,
+				8232BDD51EB704EB003B0C8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
